@@ -1,0 +1,39 @@
+Q0
+O intervalo de integracao eh [-3.5,2.3]
+O codigo abaixo contem a sua funcao a ser integrada.
+Logo abaixo, um estimador para a 4a derivada usando diferencas divididas. Ver enunciado.
+Abra um arquivo em branco do Colab e copie tudo o que vier abaixo para usar.
+
+import numpy as np
+import random
+
+def f(x):
+  np.random.seed(22447480)
+  A = np.random.rand()*10 - 5
+  B = np.random.rand()*3 + 3
+  omega = np.random.rand()*0.4 + 0.8
+  m = np.random.rand() + 0.5
+  w = 0
+  dif = 1
+  i = 0
+  while (dif > 5e-15) and (i < 20):
+    w_ant = w
+    w = w - (A+B*np.sin(omega*x)+(m+1)*w+0.9*np.sin(w))/(m+1+0.9*np.cos(w))
+    dif = np.abs(w - w_ant)
+    i = i + 1
+  return w
+
+def est_4a_derivada(funcao,x,h):
+  c0 = funcao(x+2*h)
+  c1 = funcao(x+h)
+  c2 = funcao(x)
+  c3 = funcao(x-h)
+  c4 = funcao(x-2*h)
+  est = (c0 - 4*c1 + 6*c2 - 4*c3 + c4)/(h**4)
+  return est
+
+# Exemplo de uso:
+y = f(1.3)
+d = est_4a_derivada(f,1.3,0.005)
+print(y)
+print(d)

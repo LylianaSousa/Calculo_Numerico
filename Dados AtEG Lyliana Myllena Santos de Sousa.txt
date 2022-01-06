@@ -1,0 +1,35 @@
+Q0
+Sistema de 3 incógnitas e 3 equacoes do enunciado:
+-3.5 6.6 5.2 | -9.6
+-0.1 -9.6 6.2 | -5.2
+7.4 4.2 5.6 | 6.7
+Para a Parte 0:
+m = 0.901
+Para a Parte 2:
+solucao aproximada = (1.54,-0.002,-0.813)
+Q1
+Sistema de 2 incógnitas e 2 equacoes do enunciado:
+0.78 -3.44 | 2.08
+-2.35 1.82 | 3.88
+Q2
+Sistema de 3 incógnitas e 3 equacoes do enunciado, JAH ESCALONADO:
+3.0 -0.41 -2.47 | 1.43
+-1.02 -2.4 0.96 | -2.65
+0.86 -2.15 0.9 | 1.29
+Q3
+Matriz 4x4 no meio do processo de escalonamento como explicado no enunciado:
+-19.6 70.5 13.2 -25.1
+72.1 -8.1 52.6 -8.3
+98.0 -34.4 97.0 -26.8
+99.0 -69.1 5.7 -24.1
+Anotacao das trocas de linha ateh onde foi indicado:
+p = [ 1  3 ... ...]
+Q4
+Coeficientes da matriz ESCALONADA como explicado no enunciado:
+3.32 7.62 -9.23
+8.8 6.78 -3.14
+-1.03 9.14 3.85
+As anotacoes de trocas de linhas, no vetor p:
+p = [ 3 3 3 ]
+E o vetor b apresentado, para resolver o sistema ORIGINAL Ax=b :
+b = (-0.28 0.38 -0.16)
